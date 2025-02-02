@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Solutions</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #facd02;
+        }
+
+        .hero {
+            background: url('hero.jpg') no-repeat center center/cover; /* Replace with your hero image URL */
+            color: rgb(255, 255, 255);
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .btn-primary {
+            background-color: #facd02;
+            border: none;
+        }
+
+        .services, .testimonials, .signup, .about, .gallery, .contact {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .service-card {
+            border: 3px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        .navbar-brand img {
+            height: 70px; /* Adjust the height of the logo */
+        }
+        .bg-black{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <a class="navbar-brand" href="#home">
+            <img src="newlogo.png" alt="Fitness Solutions Logo"> <!-- Replace with your logo URL -->
+            Fitness Solutions
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>               
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        
+            <header class="hero" id="home" data-aos="fade-up">
+                <div class="container">
+                    <h1>Welcome to Fitness Solutions</h1>
+                    <p>Your journey to a healthier life starts here!</p>
+                    <a href="#signup" class="btn btn-primary btn-lg">Join Us Now</a>
+                </div>
+            </header>
+        
+            <section class="about" id="about" data-aos="fade-right">
+                <div class="container">
+                    <h2>About Us</h2>
+                    <p>At Fitness Solutions, we are dedicated to helping you achieve your fitness goals. Our experienced trainers and state-of-the-art facilities provide the perfect environment for your fitness journey.</p>
+                </div>
+            </section>
+        
+            <section class="services" id="services" data-aos="zoom-in">
+                <div class="container">
+                    <h2>Our Services</h2>
+                    <div class="row">
+                        <div class="col-md-4" data-aos="flip-left">
+                            <div class="service-card">
+                                <h3>Personal Training</h3>
+                                <img src="img1.jpeg" class="img-fluid" alt="Personal Training"> <!-- Replace with your image URL -->
+                                <p>Customized training plans tailored to your fitness goals.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-aos="flip-left">
+                            <div class="service-card">
+                                <h3>Group Classes</h3>
+                                <img src="img2.jpeg" class="img-fluid" alt="Group Classes"> <!-- Replace with your image URL -->
+                                <p>Join our energetic group classes for motivation and fun.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-aos="flip-left">
+                            <div class="service-card">
+                                <h3>Nutritional Guidance</h3>
+                                <img src="img3.jpeg" class="img-fluid" alt="Nutritional Guidance"> <!-- Replace with your image URL -->
+                                <p>Expert advice on nutrition to complement your workouts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="gallery" id="gallery" data-aos="fade-up">
+                <div class="container">
+                    <h2>Gallery</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="image1.jpeg" alt="Gym Image 1"> <!-- Replace with your image URL -->
+                        </div>
+                        <div class="col-md-4">
+                            <img src="image2.jpeg" alt="Gym Image 2"> <!-- Replace with your image URL -->
+                        </div>
+                        <div class="col-md-4">
+                            <img src="image4.jpeg" alt="Gym Image 3"> <!-- Replace with your image URL -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="contact" id="contact" data-aos="fade-up">
+                <div class="container">
+                    <h2>Contact Us</h2>
+                    <form id="contactForm">
+                        <input type="text" class="form-control mb-2" placeholder="Your Name" required>
+                        <input type="email" class="form-control mb-2" placeholder="Your Email" required>
+                        <input type="text" class="form-control mb-2" placeholder="Your Phone Number" required>
+                        <textarea class="form-control mb-2" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        
+            <footer>
+                <div class="container">
+                    <h4>Contact Us</h4>
+                    <p>outer Ring Rd, 6th block, 3rd Phase, Phase 3, Banashankari, Bengaluru, Karnataka 560050</p> <!-- Replace with your gym's address -->
+                    <p>Email: fitness.solutions.kathriguppe@gmail.com</p> <!-- Replace with your gym's email -->
+                    <p>Phone: 9916002240</p> <!-- Replace with your gym's phone number -->
+                    <p>Follow us on Instagram: <a href="https://www.instagram.com/fitness_solutions_kathriguppe?igsh=MWpudmdwZ3FwaGxxbg%3D%3D&utm_source=qr" target="_blank" style="color: #ff6f61;">Instagram</a></p> <!-- Replace with your gym's Instagram link -->
+                    <p>&copy; 2025 Fitness Solutions. All rights reserved.</p>
+                </div>
+            </footer>
+        
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+            <script>
+                AOS.init();
+        
+                document.getElementById('contactForm').addEventListener('submit', async (e) => {
+                    e.preventDefault();
+        
+                    const name = document.querySelector('input[placeholder="Your Name"]').value;
+                    const email = document.querySelector('input[placeholder="Your Email"]').value;
+                    const phone = document.querySelector('input[placeholder="Your Phone Number"]').value;
+                    const message = document.querySelector('textarea[placeholder="Your Message"]').value;
+        
+                    const response = await fetch('http://localhost:5001/contact', {  // Ensure this points to the correct port
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ name, email, phone, message }),
+                    });
+        
+                    const data = await response.json();
+                    alert(data.message || data.error);
+                });
+            </script>
+        </body>
+        </html>
